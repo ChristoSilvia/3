@@ -26,6 +26,7 @@ func Init(gpu int) {
 	}
 
 	runtime.LockOSThread()
+	log.Println("DEBUG: begining to try cuda init")
 	tryCuInit()
 	dev := cu.Device(gpu)
 	cudaCtx = cu.CtxCreate(cu.CTX_SCHED_YIELD, dev)

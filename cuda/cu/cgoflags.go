@@ -20,6 +20,10 @@ package cu
 //#cgo LDFLAGS:-L/opt/cuda/lib64 -L/opt/cuda/lib
 //#cgo CFLAGS: -I/opt/cuda/include
 //
+////amazon linux:
+//#cgo LDFLAGS:-L/opt/nvidia/cuda/lib64 -L/opt/cuda/lib
+//#cgo CFLAGS: -I/opt/nvidia/cuda/include
+//
 ////WINDOWS:
 //#cgo windows LDFLAGS:-LC:/cuda/v5.0/lib/x64 -LC:/cuda/v5.5/lib/x64 -LC:/cuda/v6.0/lib/x64 -LC:/cuda/v6.5/lib/x64 -LC:/cuda/v7.0/lib/x64
 //#cgo windows CFLAGS: -IC:/cuda/v5.0/include -IC:/cuda/v5.5/include -IC:/cuda/v6.0/include -IC:/cuda/v6.5/include -IC:/cuda/v7.0/include
